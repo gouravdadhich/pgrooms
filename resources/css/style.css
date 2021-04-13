@@ -1,0 +1,319 @@
+
+/*--- GLOBAL ---*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-size: 4.8rem;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+h3{
+    font-size: 2rem;
+    font-weight: 550;
+    word-spacing: 0.5rem;
+    text-shadow: 5px 5px 5px black ;
+}
+
+h4,h5 {
+    font-size: 2.8rem;
+}
+
+li,button,label,input{
+    font-size: 2rem;
+}
+
+p {
+    color: white;
+    font-size: 2rem;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    padding: 2rem 6rem;
+    background: rgb(11, 86, 197);
+    border: none;
+    color: white;
+}
+
+/*--- navigation ---*/
+
+.head {
+    background: rgb(9, 42, 80);
+    color: white;
+}
+
+nav {
+    min-height: 10vh;
+    display: flex;
+    width: 90%;
+    margin: auto;
+    padding: 2rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav img {
+    height: 8rem;
+}
+
+nav ul {
+    display: flex;
+    flex: 1 1 40rem;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+#logo {
+    flex: 2 1 40rem;
+    
+}
+
+/*--- section-hero ---*/
+
+.hero {
+    background: linear-gradient(rgb(9, 42, 80, 1),transparent),url(/resources/css/images/hero.jpg);
+    min-height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h2 {
+    padding: 4rem;  
+}
+
+/*--- section-location-area ---*/
+
+.area {
+    background: linear-gradient(rgba(9,42,80, 0.5),transparent),url(/resources/css/images/location.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    color: white;   
+}
+
+.head-2 { 
+    padding: 2rem;
+    min-height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.head-2 h2{
+    font-size: 4rem;
+    font-weight:500;
+    padding: 2rem;
+    text-shadow: 5px 5px 5px black; 
+}
+
+.area-photos {
+    min-height: 80vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.area-photo {
+    text-align: center;
+    flex: 1 1 25rem;
+    min-height: fit-content;
+    margin: 2rem 5rem;
+}
+
+.area-photos img {
+    max-width: 75%;
+    margin: 2rem;
+}
+
+/*--- about-us-contact ---*/
+
+.about-section {
+    background: linear-gradient(rgba(9,42,80, 0.5),transparent),url(/resources/css/images/about-us.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    color: white;
+}
+
+.head-3 {
+    padding: 2rem;
+    min-height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.head-3 h2{
+    font-size: 4rem;
+    font-weight:500;
+    padding: 2rem;
+    text-shadow: 5px 5px 5px black; 
+}
+
+.information {
+    min-height: 30vh;
+    margin: 0 8rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact {
+    padding: 2rem;
+    min-height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+.contact h2{
+    font-size: 4rem;
+    font-weight:500;
+    padding: 2rem;
+    text-shadow: 5px 5px 5px black; 
+}
+
+.cont-details {
+    min-height: 30vh;
+    margin: 0 8rem;
+    justify-content: center;
+    text-align: center;
+}
+
+/*--- footer ---*/
+
+footer {
+    background: rgb(32, 29, 29);
+    min-height: 15vh;
+}
+
+.links {
+    display: flex;
+    margin: auto;
+    padding: 2rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.bottom-nav{
+    flex: 2.5 1 60rem;
+    display: flex;
+    margin: auto;
+    padding: 2rem;
+    align-items: center;
+    flex-wrap: wrap;  
+}
+.bottom-nav ul {
+    display: flex;
+    flex: 1 1 40rem;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+}
+
+.social {
+    flex: 1 1 50rem;
+    display: flex;
+    margin: auto;
+    padding: 2rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.social ul {
+    display: flex;
+    flex: 1 1 40rem;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+}
+
+
+    /*--- media-query ---*/
+
+
+
+@media screen and (max-width: 700px) {
+
+    html {
+        font-size: 50%;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    #logo {
+        padding: 2rem;
+    }  
+}
+
+@media screen and (max-width: 950px){
+
+    nav {
+        text-align: center;
+    }
+
+    #logo {
+        padding: 2rem;
+    }
+
+}
+
+@media screen and (max-width: 450px){
+
+    html {
+        font-size: 35%;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    #logo {
+        padding: 2rem;
+    }
+}
+
+
+@media screen and (max-width: 320px){
+    html {
+        font-size: 28%;
+    }
+}
